@@ -19,7 +19,7 @@ class Solution:
                     board[r][c] = "T"
                     for dr, dc in directions:
                         nr, nc = r + dr, c + dc
-                        if 0 <= nr < Rows and 0 <= nc < Cols and board[nr][nc] == "O":
+                        if 0 <= nr < Rows and 0 <= nc < Cols:
                             q.append((nr, nc))
         
         capture()
